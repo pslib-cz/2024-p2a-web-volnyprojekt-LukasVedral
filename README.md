@@ -1,4 +1,4 @@
-[figma](https://www.figma.com/design/SP6iEs1XoBX1CIJT3tmq11/VedralLukáš?node-id=0-1&p=f&t=OVcKjeiciMbBER1z-0)
+[figma](https://www.figma.com/design/SP6iEs1XoBX1CIJT3tmq11/VedralLuk%C3%A1%C5%A1?node-id=0-1&m=dev&t=XbFoBjTTKFyfMH1Y-1)
 
 
 Název: PINK! Liberec
