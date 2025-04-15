@@ -16,9 +16,9 @@ Cíl:  Poskytnout základní informace o klubu,
       Představit trenéry a klubové zázemí,
       Sdílet fotky, novinky a aktuality
       
-Struktura webu (hlavní stránky):  Úvodní stránka – základní přehled, aktuality
-                                  O nás – historie klubu, úspěchy, trenéři, zázemí
-                                  Tréninky a rozvrh – kdy a kde se trénuje, pro koho
-                                  Turnaje a výsledky – kalendář, tabulky, fotky z akcí
-                                  Galerie – fotografie z tréninků a soutěží
+Struktura webu (hlavní stránky):  Úvodní stránka – základní přehled, aktuality, 
+                                  O nás – historie klubu, úspěchy, trenéři, zázemí, 
+                                  Tréninky a rozvrh – kdy a kde se trénuje, pro koho, 
+                                  Turnaje a výsledky – kalendář, tabulky, fotky z akcí, 
+                                  Galerie – fotografie z tréninků a soutěží, 
                                   Kontakt – e-mail, telefon, adresa, přihlašovací formulář
