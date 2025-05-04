@@ -1,24 +1,41 @@
 [figma](https://www.figma.com/design/SP6iEs1XoBX1CIJT3tmq11/VedralLuk%C3%A1%C5%A1?node-id=0-1&m=dev&t=XbFoBjTTKFyfMH1Y-1)
 
 
-Název: PINK! Liberec
+# 🏓 PINK! Liberec
 
-Téma: Web o pingpongovém klubu pro mládež
+---
 
-Obsah:  Informace o budoucích i minulých akcích,
-        kde se zapsat, 
-        členové, 
-        trenéři, 
-        úspšchy
-        
-Cíl:  Poskytnout základní informace o klubu, 
-      umožnit novým zájemcům se přihlásit nebo kontaktovat trenéry,
-      Představit trenéry a klubové zázemí,
-      Sdílet fotky, novinky a aktuality
-      
-Struktura webu (hlavní stránky):  Úvodní stránka – základní přehled, aktuality, 
-                                  O nás – historie klubu, úspěchy, trenéři, zázemí, 
-                                  Tréninky a rozvrh – kdy a kde se trénuje, pro koho, 
-                                  Turnaje a výsledky – kalendář, tabulky, fotky z akcí, 
-                                  Galerie – fotografie z tréninků a soutěží, 
-                                  Kontakt – e-mail, telefon, adresa, přihlašovací formulář
+## 🎯 Téma
+
+Moderní, přehledný a responzivní web pro klub **PINK! Liberec** – zaměřený na mladé hráče stolního tenisu, jejich rodiče a fanoušky.
+
+---
+
+## 📚 Obsah webu
+
+- 🗓️ **Akce** – informace o plánovaných i proběhlých turnajích a událostech  
+- ✍️ **Přihlášky** – kde a jak se zapsat  
+- 👥 **Členové & trenéři** – seznam hráčů a představení realizačního týmu  
+- 🏆 **Úspěchy** – medaile, výsledky, ocenění  
+
+---
+
+## 🎯 Cíl projektu
+
+- 📌 Poskytnout jasné a snadno dostupné informace o klubu  
+- ✍️ Umožnit zájemcům přihlásit se online nebo kontaktovat trenéry  
+- 👋 Představit tým, zázemí a historii klubu  
+- 📰 Sdílet aktuality, fotky a výsledky
+
+---
+
+## 🧭 Struktura webu
+
+| Stránka | Obsah |
+|--------|-------|
+| 🏠 **Úvodní stránka** | Rychlý přehled o klubu, aktuality, přihlášení |
+| 📖 **O nás** | Historie klubu, úspěchy, trenéři, zázemí |
+| 📅 **Tréninky & rozvrh** | Kdy a kde trénujeme, pro koho jsou skupiny určeny |
+| 🏓 **Turnaje & výsledky** | Kalendář akcí, výsledky, tabulky, fotogalerie |
+| 🖼️ **Galerie** | Fotky z tréninků, turnajů a klubových akcí |
+| 📞 **Kontakt** | E-mail, telefon, adresa, přihlašovací formulář |
