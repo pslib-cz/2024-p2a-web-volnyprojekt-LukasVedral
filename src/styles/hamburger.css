@@ -1,0 +1,77 @@
+.hamburger {
+    --rotate-time: .25s;
+    --move-time: .15s;
+}
+
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    padding: 0;
+}
+  
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #4009be;
+    border-radius: 4.5px;
+    left: 0;
+    transition: rotate var(--rotate-time), transform var(--move-time) var(--rotate-time);
+}
+
+.hamburger span:nth-child(1) { top: 0px; 
+    transition: top var(--move-time) var(--rotate-time);
+}
+  
+.hamburger span:nth-child(2) { top: 18px; }
+  
+.hamburger span:nth-child(3) { bottom: 0px; 
+    transition: bottom var(--move-time) var(--rotate-time);
+}
+
+.hamburger-nav {
+    position: absolute;
+    top: 77px;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    left: 100%;
+    transition: left 1s;
+}
+.hamburger-nav.active{
+    left: 0;
+}
+
+@media screen and (max-width: 639px) { 
+
+    .hamburger.active span{
+        transition: transform var(--move-time), rotate var(--rotate-time) var(--move-time);
+        transform-origin: center;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%);
+        rotate: -45deg;
+    }
+    .hamburger.active span:nth-child(2) {
+        transform: scale(0%);
+        transition: transform 0s;
+    }
+    .hamburger.active span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%);
+        rotate: 45deg;
+    }
+    .hamburger-row.active {
+
+    }
+    .hamburger-nav.active {
+        z-index: 1;
+    }
+    .hamburger-nav.active+main {
+        position: fixed;
+    }
+}

@@ -1,9 +1,10 @@
+
 :root {
     color-scheme: light dark;
     --primary: #E0147B;
     --secondary:#0FA3B1;
     --background: light-dark(#F6F4F3, #191919);
-    --text:light-dark(#191919, #F6F4F3);
+    --dark:light-dark(#191919, #F6F4F3);
     background-color: var(--background);
 
   }
@@ -11,8 +12,44 @@
   body {
     min-width: 100vw;
     min-height: 100vh;
+    margin: 0 auto;
   }
   
   .app {
     margin: 0 auto;
+    overflow-x: hidden;
   }
+
+  .logo{
+    height: 5em;
+    width: 10em;
+  }
+
+
+
+
+/*hamburger menu*/
+.hamburger {
+    display: block;
+}
+.hamburger-row {
+    padding: 1em;
+    background-color:var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.hamburger-nav {
+    background-color:var(--secondary);
+}
+.hamburger-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.hamburger-nav li {
+    display: block;
+    padding: 0.25em 1em;
+}
+
