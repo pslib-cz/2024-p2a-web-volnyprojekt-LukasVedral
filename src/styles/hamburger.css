@@ -31,12 +31,12 @@
 }
 
 .hamburger-nav {
-    position: fixed;
+    position: absolute;
     top: 116px;
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     left: 100%;
     transition: left 1s;
 }
@@ -63,4 +63,8 @@
 }
 .hamburger-nav {
     z-index: 5;
+}
+body.active{
+    overflow: hidden;
+    height: 100vh;
 }

@@ -3,11 +3,10 @@
     color-scheme: light dark;
     --primary: #E0147B;
     --secondary:#0FA3B1;
-    --secondar-dark: #0F8994;
+    --secondary-dark: #0F8994;
     --light: light-dark(#F6F4F3, #191919);
     --dark:light-dark(#191919, #F6F4F3);
     background-color: var(--light);
-
   }
   html{
     font-family: "Inter", sans-serif;
@@ -16,9 +15,17 @@
   body {
     margin: 0 auto;
   }
+  .app{
+    position: relative;
+    overflow: hidden;
+  }
   a{
     text-decoration: none;
     color: var(--dark);
+  }
+  p{
+    color: var(--light);
+    font-size: 1em;
   }
 .img-responsive{
   display: block;
@@ -61,7 +68,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      overflow-x: hidden;
+
   }
 
   .hamburger-nav {
@@ -89,13 +96,27 @@
   height: 90vh;
   background-image: url(/images/bg-mobile2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center 66% ;
   position: relative;
 }
 .header--index .hamburger-row:not(.active){
   background-color:  #00000000;
 }
-
+.slogan{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2.5em;
+  left: calc(50vw - 150px);
+  width: 300px;
+  margin: 0;
+}
+.arrow{
+position: absolute;
+left: calc(50vw - 20px);
+bottom: 3em;
+}
 
 
 
@@ -124,16 +145,47 @@
 
   /*sponzori*/
   .footer__sponsors{
-    background-color: var(--secondar-dark);
-    padding: 1.5em;
+    background-color: var(--secondary-dark);
+    padding: 1em;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 1em;
   }
-  .footer__sponsors > svg{
+  .footer__sponsors img{
     height: 3em;
   }
 
   /*info*/
-  .footer_info{}
+  .info{
+    line-height: .5em;
+  }
+  .right {
+    text-align: right;
+  }
+  .footer__info{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*footer copyright*/
+  .footer__copyright{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-dark);
+    padding: 1em;
+    align-items: center;
+  }
+  .social-icons{
+    display: flex;
+    gap: 1em;
+  }
+  .social-icons svg{
+    width: 3em;
+    height: 3em;
+  }
+  .social-icons a:hover path{
+    fill: var(--primary);
+  }
