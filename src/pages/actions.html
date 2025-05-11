@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PINK!_Liberec-main</title>
+    <title>PINK!_Liberec-nabor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/style.css">
+
     <script src="src\scripts\hamburger.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -81,29 +82,41 @@
         </div>
         <nav class="hamburger-nav hamburger-zone">
             <ul>
-                <a class="menu__item " href="%BASE_URL%index.html"><li>Domů</li></a>
+                <li><a class="menu__item" href="%BASE_URL%index.html">Domů</a></li>
                 <li><a class="menu__item" href="%BASE_URL%club.html">Klub</a></li>
                 <li><a class="menu__item" href="%BASE_URL%trainings.html">Tréninky</a></li>
                 <li><a class="menu__item active-page" href="%BASE_URL%actions.html">Akce</a></li>
-                <li><a class="menu__item" href="%BASE_URL%contact.html">Kontak</a></li>
-                <li><a class="menu__item" href="%BASE_URLnabor.html%">Nábor</a></li>
+                <li><a class="menu__item" href="%BASE_URL%contact.html">Kontakt</a></li>
+                <li><a class="menu__item" href="%BASE_URL%nabor.html">Nábor</a></li>
             </ul>
         </nav>
+        <p class="slogan">JE ČAS HRÁT PING-PONG</p>
+        
+        <svg class="arrow" width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 24C18.6699 23.9997 17.3945 23.4926 16.4541 22.5901L1.40788 8.15466C0.494287 7.24714 -0.0112376 6.03166 0.000189596 4.77001C0.0116168 3.50837 0.539081 2.3015 1.46898 1.40935C2.39887 0.517199 3.6568 0.0111453 4.97183 0.0001819C6.28685 -0.0107815 7.55375 0.474223 8.49967 1.35074L20 12.3843L31.5003 1.35074C32.4462 0.474223 33.7131 -0.0107815 35.0282 0.0001819C36.3432 0.0111453 37.6011 0.517199 38.531 1.40935C39.4609 2.3015 39.9884 3.50837 39.9998 4.77001C40.0112 6.03166 39.5057 7.24714 38.5921 8.15466L23.5459 22.5901C22.6055 23.4926 21.3301 23.9997 20 24Z" fill="#E0147B"/>
+        </svg>
         </header>
         <main>
 
         </main>
 
         <footer class="page__footer">
-          <div class="footer__nabor">
+          <div class="footer__nabor footer-item">
             <div class="nabor-container">
-              <img class="img-responsive img--nabor" src="/images/nabor.jpg" alt="nábor">
+              <img class="img-responsive img--nabor" src="/images/nabor.avif" alt="nábor">
               <a class="btn btn--nabor" href="%BASE_URL%nabor.html">
                 Nábor nových členů
               </a>
             </div>
+            <div class="nabor-container quiz">
+              <img class="img-responsive img--nabor" src="/images/kviz.avif" alt="pingpongový kvíz">
+              <a class="btn btn--nabor" href="%BASE_URL%nabor.html">
+                Zkusit si pingpongový kvíz
+              </a>
+            </div>
           </div>
-          <div class="footer__sponsors">
+
+          <div class="footer__sponsors footer-item">
             <a href="https://www.ping-pong.cz">
               <img src="public/images/sponsors/ČST.svg" alt="Český Stolní Tenis">
             </a>
@@ -132,7 +145,7 @@
               <img src="public/images/sponsors/TLS.svg" alt="Transport & Logistics services">
             </a>
           </div>
-          <div class="footer__info">
+          <div class="footer__info footer-item">
             <div class="info info--left">
               <p>PINK! Liberec, z.s.</p>
               <p>pink-liberec@seznam.cz</p>
@@ -142,20 +155,20 @@
               <p>+420 777 263 342</p>
             </div>
           </div>
-          <div class="footer__copyright">
+          <div class="footer__copyright footer-item">
             <p>Copyright © 2025 Lukáš Vedral</p>
             <div class="right social-icons">
               <a href="https://www.facebook.com/PINKLiberec">
                 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_153_53)">
-  <path d="M32 0.799805C14.3267 0.799805 0 15.1265 0 32.7998C0 50.4731 14.3267 64.7998 32 64.7998C49.6733 64.7998 64 50.4731 64 32.7998C64 15.1265 49.6733 0.799805 32 0.799805ZM39.58 22.9131H34.77C34.2 22.9131 33.5667 23.6631 33.5667 24.6598V28.1331H39.5833L38.6733 33.0865H33.5667V47.9565H27.89V33.0865H22.74V28.1331H27.89V25.2198C27.89 21.0398 30.79 17.6431 34.77 17.6431H39.58V22.9131Z" fill="#D9D9D9"/>
-  <path d="M32 0.799805C14.3267 0.799805 0 15.1265 0 32.7998C0 50.4731 14.3267 64.7998 32 64.7998C49.6733 64.7998 64 50.4731 64 32.7998C64 15.1265 49.6733 0.799805 32 0.799805ZM39.58 22.9131H34.77C34.2 22.9131 33.5667 23.6631 33.5667 24.6598V28.1331H39.5833L38.6733 33.0865H33.5667V47.9565H27.89V33.0865H22.74V28.1331H27.89V25.2198C27.89 21.0398 30.79 17.6431 34.77 17.6431H39.58V22.9131Z" fill="#F6F4F3" fill-opacity="0.2"/>
-  </g>
-  <defs>
-  <clipPath id="clip0_153_53">
-  <rect width="64" height="64" fill="white" transform="translate(0 0.799805)"/>
-  </clipPath>
-  </defs>
+                  <g clip-path="url(#clip0_153_53)">
+                  <path d="M32 0.799805C14.3267 0.799805 0 15.1265 0 32.7998C0 50.4731 14.3267 64.7998 32 64.7998C49.6733 64.7998 64 50.4731 64 32.7998C64 15.1265 49.6733 0.799805 32 0.799805ZM39.58 22.9131H34.77C34.2 22.9131 33.5667 23.6631 33.5667 24.6598V28.1331H39.5833L38.6733 33.0865H33.5667V47.9565H27.89V33.0865H22.74V28.1331H27.89V25.2198C27.89 21.0398 30.79 17.6431 34.77 17.6431H39.58V22.9131Z" fill="#D9D9D9"/>
+                  <path d="M32 0.799805C14.3267 0.799805 0 15.1265 0 32.7998C0 50.4731 14.3267 64.7998 32 64.7998C49.6733 64.7998 64 50.4731 64 32.7998C64 15.1265 49.6733 0.799805 32 0.799805ZM39.58 22.9131H34.77C34.2 22.9131 33.5667 23.6631 33.5667 24.6598V28.1331H39.5833L38.6733 33.0865H33.5667V47.9565H27.89V33.0865H22.74V28.1331H27.89V25.2198C27.89 21.0398 30.79 17.6431 34.77 17.6431H39.58V22.9131Z" fill="#F6F4F3" fill-opacity="0.2"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_153_53">
+                  <rect width="64" height="64" fill="white" transform="translate(0 0.799805)"/>
+                  </clipPath>
+                  </defs>
                 </svg>
               </a>
               <a href="https://www.instagram.com/pinkliberec/">
