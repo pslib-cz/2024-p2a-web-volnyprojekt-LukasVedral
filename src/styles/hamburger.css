@@ -17,7 +17,7 @@
         display: block;
     }
     .hamburger span{
-    background-color: var(--light);
+    background-color: var(--text-color);
     }
 
 
@@ -69,7 +69,7 @@
 
     .hamburger-nav {
         position: absolute;
-        top: 116px;
+        top: 100px;
         margin: 0;
         box-sizing: border-box;
         width: 100%;

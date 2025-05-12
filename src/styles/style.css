@@ -1,17 +1,24 @@
+@layer reset, init, typography, design;
 
-:root {
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(typography);
+
+@layer init{
+
+  :root {
     color-scheme: light dark;
     --primary: #E0147B;
     --secondary:#0FA3B1;
     --secondary-dark: #0F8994;
-    --light: light-dark(#F6F4F3, #646464);
-    --dark:#191919;
+    --light: light-dark(#F6F4F3, #191919);
+    --text-light:#F6F4F3;
+    --dark: #191919;
     background-color: var(--light);
   }
-  html{
-    font-family: "Inter", sans-serif;
-  }
-  
+}
+
+@layer design{
+
   body {
     margin: 0 auto;
   }
@@ -19,14 +26,7 @@
     position: relative;
     overflow: hidden;
   }
-  a{
-    text-decoration: none;
-    color: var(--dark);
-  }
-  p{
-    color: var(--light);
-    font-size: 1em;
-  }
+
 .img-responsive{
   display: block;
   width: 100%;
@@ -37,12 +37,12 @@
 .btn{
   font-size: .75em;
   text-align: center;
-  color: var(--light);
-  position: absolute;
-  display: block;
+  color: var(--text-light);
+  display: inline-block;
   background-color: var(--primary);
   padding: 1em .75em;
   border-radius: 10px;
+
 }
 .btn:hover{
   background-color: var(--secondary);
@@ -72,7 +72,7 @@
   position: relative;
 }
 .header--index .hamburger-row:not(.active){
-  background-color:  #00000000;
+  background-color:  transparent;
 }
 .slogan{
   text-align: center;
@@ -107,7 +107,7 @@ bottom: 3em;
     position: relative;
   }
   .btn--nabor{
-    width: 8em;
+    position: absolute;
     bottom: 2.5em;
     right: 2.5em;
   }
@@ -167,10 +167,29 @@ bottom: 3em;
 
 
 
+/*animace*/
 
 
 
 
+/*main*/
+main{
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.aktuality__card{
+  height: auto;
+  position: relative;
+}
+
+.aktuality__card p{
+  color: var(--dark);
+}
+.card__main{
+  padding: 8px 16px;
+}
 
 
 
@@ -208,7 +227,7 @@ bottom: 3em;
       line-height: 1;
       display: block;
       font-size: 1.5em;
-      color: var(--light);
+      color: var(--text-light);
       padding: 16px 24px;
       border: var(--light) solid 4px;
       border-radius: 1.5em;
@@ -269,3 +288,12 @@ bottom: 3em;
       height: 4em;
     }
   }
+
+
+
+
+
+}
+
+
+  
