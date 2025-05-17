@@ -1,7 +1,8 @@
-@layer reset, init, typography, design;
+@layer reset, init, typography, hamburger, design;
 
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(typography);
+@import url(hamburger.css) layer(hamburger);
 
 @layer init{
 
@@ -11,8 +12,11 @@
     --secondary:#0FA3B1;
     --secondary-dark: #0F8994;
     --light: light-dark(#F6F4F3, #191919);
-    --text-light:#F6F4F3;
     --dark: #191919;
+    --text-light:#F6F4F3;
+    --text-dark: light-dark(#191919,#F6F4F3);
+    --main-gap: 5rem;
+
     background-color: var(--light);
   }
 }
@@ -168,8 +172,61 @@ bottom: 3em;
 
 
 /*animace*/
+.ball{
+  position: absolute;
+}
+.animace {
+  background-color: var(--dark);
+  margin: var(--main-gap) 0;
+  position: relative;
+  height: 200px;
+}
 
+.paddle {
+  position: absolute;
+  bottom: 20px;
+  width: 140px;
+  height: auto;
+}
 
+.paddle.left {
+  left: 0;
+}
+
+.paddle.right {
+  right: 0;
+}
+
+.ball {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  animation: pingpong 2s ease-in-out infinite;
+}
+
+@keyframes pingpong {
+  0% {
+    left: 60px;
+    bottom: 100px;
+  }
+  25% {
+    bottom: 130px;
+  }
+  50% {
+    left: calc(100% - 60px);
+    bottom: 100px;
+  }
+  75% {
+    bottom: 130px;
+  }
+  100% {
+    left: 60px;
+    bottom: 100px;
+  }
+}
 
 
 /*main*/
@@ -177,18 +234,31 @@ main{
   padding: 0 1em;
   display: flex;
   flex-direction: column;
+  gap: var(--main-gap);
+  margin-bottom: var(--main-gap);
 }
 
 .aktuality__card{
   height: auto;
   position: relative;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
 }
 
 .aktuality__card p{
-  color: var(--dark);
+  color: var(--text-dark);
+  margin: 0%;
 }
 .card__main{
-  padding: 8px 16px;
+  padding: 16px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.btn--aktuality{
+  margin-top: 16px;
+  width: fit-content;
+  align-self: flex-end;
 }
 
 
