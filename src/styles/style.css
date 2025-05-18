@@ -177,7 +177,7 @@ bottom: 3em;
 }
 .animace {
   background-color: var(--dark);
-  margin: var(--main-gap) 0;
+  margin-top: var(--main-gap);
   position: relative;
   height: 200px;
 }
@@ -235,9 +235,10 @@ main{
   display: flex;
   flex-direction: column;
   gap: var(--main-gap);
-  margin-bottom: var(--main-gap);
+  margin: var(--main-gap) 0;
 }
 
+/*index*/
 .aktuality__card{
   height: auto;
   position: relative;
@@ -249,25 +250,75 @@ main{
   color: var(--text-dark);
   margin: 0%;
 }
-.card__main{
-  padding: 16px;
-  padding-top: 8px;
+.aktuality__card--main{
+  padding: 1rem;
+  padding-top: .5rem;
   display: flex;
   flex-direction: column;
 }
 .btn--aktuality{
-  margin-top: 16px;
+  margin-top: 1rem;
   width: fit-content;
   align-self: flex-end;
 }
 
 
-
-
-
-
-
-
+/*club*/
+.plan__card{
+  border: var(--primary) 2px solid;
+  text-align: center;
+}
+.plan__card main{
+  margin: 1rem;
+  padding: 0;
+}
+.plan__card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.plan__card li{
+  padding: 0;
+}
+.plan__card p{
+  color: var(--text-dark);
+}
+.plan__card header{
+  background-color: var(--primary);
+}
+.season-plan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--main-gap);
+}
+  /*swiper*/
+  .swiper-slide img{
+    width: 100%;
+    height: auto;
+  }
+  .swiper {
+    position: relative;
+    overflow: visible;
+  }
+  
+  .swiper-slide {
+    transition: z-index 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    opacity: 0.5;
+    position: relative;
+    z-index: 1;
+  }
+  .swiper-slide img{
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Aktivní slide – uprostřed */
+  .swiper-slide-active img{
+    transform: scale(2);
+    opacity: 1;
+    z-index: 10;
+  }
 
 
 
@@ -298,7 +349,7 @@ main{
       display: block;
       font-size: 1.5em;
       color: var(--text-light);
-      padding: 16px 24px;
+      padding: 1rem 1.5rem;
       border: var(--light) solid 4px;
       border-radius: 1.5em;
     }
@@ -328,7 +379,7 @@ main{
 
     /*footer*/
     .footer-item{
-      padding: 24px 128px;
+      padding: 1.5rem 8rem;
     }
     .footer__nabor{
       display: flex;
@@ -337,7 +388,7 @@ main{
     .nabor-container{
       width: auto;
       margin: 0;
-      padding: 0 16px;
+      padding: 0 1rem;
     }
     .quiz{
       display: block;
@@ -347,7 +398,7 @@ main{
     }
     .footer__sponsors{
 
-      gap: 40px;
+      gap: 2.5rem;
     }
 
     .info{

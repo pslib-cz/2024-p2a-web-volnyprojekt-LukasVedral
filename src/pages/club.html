@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PINK!_Liberec-nabor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="/src/scripts/hamburger.js"></script>
 
-    <script src="src\scripts\hamburger.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
-  <body class="hamburger-zone">
-      <div class="app">
+  <body>
+      <div class="app hamburger-zone">
         <header> 
           <div class="hamburger-row hamburger-zone ">
             <a href="%BASE_URL%index.html">
@@ -39,9 +37,142 @@
             </ul>
 
         </header>
-        <main>
 
+        <main>
+          <div class="club__header">
+          <h1>O nás:</h1>
+            <ul>
+              <li>
+                Vytváříme podmínky pro rozvoj stolního tenisu v Liberci
+              </li>
+              <li>
+                Jsme aktivní v pořádání turnajů a soustředění
+              </li>
+              <li>
+                Naší prioritou je práce s mládeží
+              </li>
+              <li>
+                Své místo si u nás najde každý, kdo má zájem hrát jak na vrcholové úrovni, tak i jen rekreačně
+              </li>
+            </ul>
+
+            <h2>Cíle:</h2>
+            <ul>
+              <li>
+                Mít nejlepší mládež v Libereckém kraji
+              </li>
+              <li>
+                Být ústředním místem pro tréninky nejlepších hráčů mládeže ze širokého okolí              
+              </li>
+            </ul>
+          </div>
+
+          <div class="season-plan">
+            <h2>Plán na sezónu 2024/25</h2>
+            <div class="plan__card">
+              <header>
+                <h2>A tým mužů - 3.liga</h2>
+              </header>
+              <main>
+                <ul>
+                  <li>Tomáš Prosa</li>
+                  <li>Filip Wolf</li>
+                  <li>Vojtěch Grubr</li>
+                  <li>Jiří Čížek</li>
+                </ul>
+              </main>
+              <div class="plan__img">
+                <img class="img-responsive" src="%BASE_URL%images/season-plan/3liga.avif" alt="Tým 3. ligy">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="season-plan">
+            <div class="plan__card">
+              <header>
+                <h2>BTM ČR U13 - U19</h2>
+                
+              </header>
+              <main>
+                <p>Náš klub bude pořadatelem největší stolně-tenisové akce v Libereckém kraji v této sezoně. V Liberci a Jablonci nad Nisou přivítáme na konci listopadu 2024 nejlepší hráče mládeže z ČR.</p>
+              </main>
+            </div>
+          </div>
+
+
+          <div class="season-plan">
+            <div class="plan__card">
+              <header>
+                <h2>Soustředění</h2>
+              </header>
+              <main>
+                <p>V plánu máme další příměstská, zimní i letní soustředění pro naši mládež.</p>
+              </main>
+              <div class="plan__img">
+                <img class="img-responsive" src="%BASE_URL%images/season-plan/soustredeni.avif" alt="Soustředění">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="season-plan">
+            <div class="plan__card">
+              <header>
+                <h2>Mládež</h2>
+              </header>
+              <main>
+                <p>V plánu máme další příměstská, zimní i letní soustředění pro naši mládež.</p>
+              </main>
+              <div class="plan__img">
+                <img class="img-responsive" src="%BASE_URL%images/season-plan/mo.avif" alt="Mládež našeho klubu">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="season-plan">
+            <div class="plan__card">
+              <header>
+                <h2>Krajský turnaj mládeže</h2>
+              </header>
+              <main>
+                <p>V prosinci 2024 budeme pořádat v Hale míčových sportů v Liberci krajský turnaj mládeže.</p>
+              </main>
+              <div class="plan__img">
+                <img class="img-responsive" src="%BASE_URL%images/season-plan/kbt.avif" alt="Krajský bodvací turnaj">
+              </div>
+            </div>
+          </div>
+
+          <div >
+
+
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="img-responsive" src="%BASE_URL%images/season-plan/kbt.avif" alt="Krajský bodvací turnaj"></div>
+                  <div class="swiper-slide"><img class="img-responsive" src="%BASE_URL%images/season-plan/mo.avif" alt="Krajský bodvací turnaj"></div>
+                  <div class="swiper-slide"><img class="img-responsive" src="%BASE_URL%images/season-plan/3liga.avif" alt="Krajský bodvací turnaj"></div>
+                  <div class="swiper-slide"><img class="img-responsive" src="%BASE_URL%images/season-plan/3liga.avif" alt="Krajský bodvací turnaj"></div>
+                </div>
+          
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+
+          </div>
+
+
+
+
+  
         </main>
+
+
+
+
 
         <footer class="page__footer">
           <div class="footer__nabor footer-item">
@@ -152,7 +283,7 @@
           </div>
         </footer>
 
-
+        <script type="module" src="/src/scripts/main.js"></script>
 
     </div>
   </body>

@@ -1,10 +1,11 @@
 .hamburger-row {
-    padding: .5em 1.25em;
+    height: 100px;
+    padding: 0 1.25em;
     background-color:var(--dark);
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 .hamburger-nav ul {
     margin: 0;
@@ -30,7 +31,6 @@
     }
     .hamburger-nav li {
         display: block;
-        padding: .5em;
         text-align: center;
         font-size: 2em;
     }
@@ -101,7 +101,7 @@
     .hamburger-nav {
         z-index: 5;
     }
-    body.active{
+    .app.active{
         overflow: hidden;
         height: 100vh;
     }
