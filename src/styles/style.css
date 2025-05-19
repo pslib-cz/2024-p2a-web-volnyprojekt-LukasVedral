@@ -141,12 +141,17 @@ bottom: 3em;
   }
   .right {
     text-align: right;
+    
   }
   .footer__info{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .footer__info p, .footer-item a{
+    color: var(--text-light);
+
+    padding: .5em 0;
   }
 
   /*footer copyright*/
@@ -154,8 +159,10 @@ bottom: 3em;
     display: flex;
     justify-content: space-between;
     background-color: var(--secondary-dark);
-
     align-items: center;
+  }
+  .footer__copyright p{
+    color: var(--text-light);
   }
   .social-icons{
     display: flex;
@@ -239,18 +246,17 @@ main{
 }
 
 /*index*/
-.aktuality__card{
+.aktuality-card{
   height: auto;
   position: relative;
   border: 2px solid var(--secondary);
   border-radius: 8px;
 }
 
-.aktuality__card p{
-  color: var(--text-dark);
+.aktuality-card p{
   margin: 0%;
 }
-.aktuality__card--main{
+.aktuality-card__main{
   padding: 1rem;
   padding-top: .5rem;
   display: flex;
@@ -267,25 +273,23 @@ main{
 .club__header li{
   list-style: disc outside none;
 }
-.plan__card{
+.plan-card{
   border: var(--primary) 2px solid;
   text-align: center;
 }
-.plan__card main{
+.plan-card main{
   margin: 1rem;
   padding: 0;
 }
-.plan__card ul{
+.plan-card ul{
   padding: 0;
   margin: 0;
 }
-.plan__card li{
+.plan-card li{
   padding: 0;
 }
-.plan__card p{
-  color: var(--text-dark);
-}
-.plan__card header{
+
+.plan-card header{
   background-color: var(--primary);
 }
 .season-plan{
@@ -361,41 +365,107 @@ main{
   gap: var(--main-gap);
 }
 
-.trainers__card img{
 
-}
-.trainers__card li{
+.trainers-card li{
   list-style: disc outside none;
   padding: 0;
   
 }
-.trainers__card--heading{
+.trainers-card__heading{
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 }
-.trainers__card h3{
+.trainers-card h3{
   color: var(--primary);
 }
-.trainers__card span{
+.trainers-card span{
   background-color: var(--secondary-dark);
   padding: .25rem .5rem;
   border-radius: 50px;
   color: var(--text-light);
 }
-.trainers__card a{
+.trainers-card a{
   color: var(--primary);
   display: inline;
 }
-.trainers__card img{
+.trainers-card img{
   border-radius: 8px;
 }
 
+/*akce*/ 
 
+.actions{
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--main-gap);
+}
+.actions-card{
+  background: radial-gradient(var(--secondary), var(--secondary-dark));
+  padding: 1rem .75rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.actions-card p , .actions-card a{
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+.actions-card p::before, .actions-card a::before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
 
+.actions-card__place::before{
+  background-image: url('/images/calendar.svg');
+}
+.actions-card__date::before{
+  background-image: url('/images/point.svg');
 
+}
+.actions-card__info::before{
+  background-image: url('/images/calendar.svg');
 
+}
 
+/*contact*/
+.contact-part{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  border-left: var(--secondary) solid 4px;
+  padding: 0 1.25em;
+}
+.contact-part:hover{
+  border-left-color: var(--primary);
+}
+
+.contact-part h2{
+  font-weight: 700;
+}
+.contact-part > *{
+  font-size: 1rem;
+}
+.contact__icons{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+.contact__icons a{
+  display: inline-block;
+}
+
+.contact__icons path{
+  fill: var(--primary);
+}
+.contact__icons a:hover path{
+  fill: var(--secondary);
+}
 
 
 
