@@ -37,25 +37,31 @@
         </nav>
 
         </header>
-        <main>
+
+
+        <main class="nabor">
+          <div class="nabor__header">
+            <h1>Napište nám</h1>
+            <p>Dejte nám na sebe kontakt a my se Vám ozveme ...</p>
+          </div>
+
+
+          <form class="nabor-form" action="#" method="post">
+            <input class="nabor-form__row" type="text" name="name" placeholder="Jméno" required>
+            <input class="nabor-form__row" type="email" name="email" placeholder="E-mail" required>
+            <input class="nabor-form__row" type="tel" name="phone" placeholder="Telefon">
+            <textarea class="nabor-form__row textarea" name="message" placeholder="Vaše zpráva" rows="5" required></textarea>
+            <button class="btn  nabor-form__btn" type="submit">Odeslat</button>
+          </form>
+
+
+
 
         </main>
 
+
         <footer class="page__footer">
-          <div class="footer__nabor footer-item">
-            <div class="nabor-container">
-              <img class="img-responsive img--nabor" src="%BASE_URL%images/nabor.avif" alt="nábor">
-              <a class="btn btn--nabor" href="%BASE_URL%nabor.html">
-                Nábor nových členů
-              </a>
-            </div>
-            <div class="nabor-container quiz">
-              <img class="img-responsive img--nabor" src="%BASE_URL%images/kviz.avif" alt="pingpongový kvíz">
-              <a class="btn btn--nabor" href="%BASE_URL%nabor.html">
-                Zkusit si pingpongový kvíz
-              </a>
-            </div>
-          </div>
+
 
           <div class="footer__sponsors footer-item">
             <a href="https://www.ping-pong.cz">
