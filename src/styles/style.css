@@ -264,6 +264,9 @@ main{
 
 
 /*club*/
+.club__header li{
+  list-style: disc outside none;
+}
 .plan__card{
   border: var(--primary) 2px solid;
   text-align: center;
@@ -273,7 +276,6 @@ main{
   padding: 0;
 }
 .plan__card ul{
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -292,6 +294,7 @@ main{
   align-items: center;
   gap: var(--main-gap);
 }
+
   /*swiper*/
   .swiper-slide img{
     width: 100%;
@@ -313,12 +316,103 @@ main{
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
-  /* Aktivní slide – uprostřed */
   .swiper-slide-active img{
     transform: scale(2);
     opacity: 1;
-    z-index: 10;
+    z-index: 2;
   }
+
+/*trainings*/
+.training__header{
+  color: var(--text-light);
+}
+.trainings{
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+.trainings ul{
+  padding: 0;
+  margin: 1rem 0;
+}
+.trainings li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-light);
+  font-size: 1.25em;
+}
+.trainings li:not(:last-of-type) {
+  border-bottom: 1px solid var(--secondary-dark);
+}
+
+.trainings span {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.trainings p{
+  color: var(--dark);
+  padding: .5em;
+}
+
+.trainers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-gap);
+}
+
+.trainers__card img{
+
+}
+.trainers__card li{
+  list-style: disc outside none;
+  padding: 0;
+  
+}
+.trainers__card--heading{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.trainers__card h3{
+  color: var(--primary);
+}
+.trainers__card span{
+  background-color: var(--secondary-dark);
+  padding: .25rem .5rem;
+  border-radius: 50px;
+  color: var(--text-light);
+}
+.trainers__card a{
+  color: var(--primary);
+  display: inline;
+}
+.trainers__card img{
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -339,7 +433,6 @@ main{
       gap: 1.5em;
     }    
     .hamburger-nav li{
-      list-style: none;
       text-align: center;
     }    
 
