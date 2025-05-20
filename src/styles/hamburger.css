@@ -11,7 +11,11 @@
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 1200px) { 
+.hamburger-nav li {
+    text-align: center;
+    padding: 0;
+}
+@media screen and (max-width: 1080px) { 
     
 
     .hamburger { 
@@ -31,7 +35,6 @@
     }
     .hamburger-nav li {
         display: block;
-        text-align: center;
         font-size: 2em;
     }
 

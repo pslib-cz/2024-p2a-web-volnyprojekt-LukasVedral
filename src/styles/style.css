@@ -537,20 +537,16 @@ main{
 
 
 
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 1080px) {
     /*header*/
-    .hamburger-row{
-      height: 96px;
-    }
     .hamburger-nav{
       position: absolute;
-      top: 24px;
-      right: 0;
-      margin-right: 3.25em;
+      top: 18px;
+      right: 20px;
     }    
     .hamburger-nav ul{
       display: flex;
-      gap: 1.5em;
+      gap: 1em;
     }    
     .hamburger-nav li{
       text-align: center;
