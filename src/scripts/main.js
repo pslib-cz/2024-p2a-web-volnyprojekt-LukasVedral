@@ -1,21 +1,20 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-
+import { Navigation } from 'swiper/modules';
+/*
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+*/
+import '/src/styles/swiper.css';
 import '../styles/style.css';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation],
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 2.5,
   centeredSlides: true,
-  spaceBetween: 50,
-  
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  spaceBetween: 10,
+
 
   // Navigation arrows
   navigation: {
@@ -24,3 +23,4 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+document.querySelector('.swiper').style.overflow = 'visible';
