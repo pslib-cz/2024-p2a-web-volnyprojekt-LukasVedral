@@ -244,11 +244,11 @@ bottom: 3em;
 /*main*/
 main{
   padding: 0 1em;
-  display: grid;
-  grid-template-rows: 2.5rem;
-  grid-auto-rows: auto;
-  grid-gap: var(--main-gap);
+  display: flex;
+  flex-flow: column wrap;
+  gap: var(--main-gap);
   margin: var(--main-gap) 0;
+
 }
 
 /*index*/
@@ -285,6 +285,7 @@ main{
 .plan-card{
   border: var(--primary) 2px solid;
   text-align: center;
+  max-width: 448px;
 }
 .plan-card main{
   margin: 1rem;
@@ -303,9 +304,10 @@ main{
 }
 .season-plan{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
   gap: var(--main-gap);
+  align-items: flex-start;
 }
 
 
@@ -313,7 +315,7 @@ main{
   /*swiper*/
   .swiper-container{
     width: 90%;
-    max-width: 800px;
+    max-width: 1600px;
     height: 100%;
     margin: 0 auto;
     padding: 3.75em 0;
@@ -628,28 +630,94 @@ main{
       height: 4em;
     }
 
-
-
-
+  /*animace*/
+    .paddle.left{
+      left: 112px;
+    }
+    .paddle.right{
+      right: 112px;
+    }
+    @keyframes pingpong {
+      0% {
+        left: 172px;
+        bottom: 100px;
+      }
+      25% {
+        bottom: 130px;
+      }
+      50% {
+        left: calc(100% - 172px);
+        bottom: 100px;
+      }
+      75% {
+        bottom: 130px;
+      }
+      100% {
+        left: 172px;
+        bottom: 100px;
+      }
+    }
+    
 
 
 
 
     main{
-      padding: 8rem;
+      padding:0 8rem;
+      max-width: 2540px;
     }
+
+
+    /*index*/
     .aktuality{
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:
-      'heading heading'
-      'lg rest';
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      gap: 4rem;
     }
-    .aktuality-card{
-      grid-area: rest;
+    .aktuality-card__container{
+      flex:1 ;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
     }
+    .aktuality-card--s{
+      flex: 1;
+      display: flex;
+      grid-column: 2;
+    }
+
+    .aktuality-card--s h2{
+      font-size: 1.5rem;
+    }
+    .aktuality-card--s img{
+      height: 128px ;
+    }
+
+    .aktuality-card--s .aktuality-card__main{
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .btn--aktuality{
+      margin: 0;
+    }
+
     .aktuality-card--lg{
-      grid-area: lg;
+      flex: 1;
     }
+
+    /*club*/
+    .club__header{
+      display: flex;
+      justify-content: center;
+      gap: 128px;
+    }
+
+    .season-plan{
+      
+    }
+
 
 
 
