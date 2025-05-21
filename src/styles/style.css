@@ -60,7 +60,9 @@
 
 
 
-
+  .menu__item{
+    margin: 1.25rem;
+  }
   .menu__item:hover{
     text-decoration: underline var(--primary) .25em;
   }
@@ -87,6 +89,7 @@
   left: calc(50vw - 150px);
   width: 300px;
   margin: 0;
+  color: var(--text-light);
 }
 .arrow{
 position: absolute;
@@ -241,13 +244,17 @@ bottom: 3em;
 /*main*/
 main{
   padding: 0 1em;
-  display: flex;
-  flex-direction: column;
-  gap: var(--main-gap);
+  display: grid;
+  grid-template-rows: 2.5rem;
+  grid-auto-rows: auto;
+  grid-gap: var(--main-gap);
   margin: var(--main-gap) 0;
 }
 
 /*index*/
+
+
+
 .aktuality-card{
   height: auto;
   position: relative;
@@ -551,12 +558,15 @@ main{
     .hamburger-nav li{
       text-align: center;
     }    
+    .menu__item{
+      margin: 0;
+    }
 
 
     .hamburger-nav a{
       line-height: 1;
       display: block;
-      font-size: 1.5em;
+      font-size: 1.25em;
       color: var(--text-light);
       padding: 1rem 1.5rem;
       border: var(--light) solid 4px;
@@ -617,6 +627,37 @@ main{
       width: 4em;
       height: 4em;
     }
+
+
+
+
+
+
+
+
+    main{
+      padding: 8rem;
+    }
+    .aktuality{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      'heading heading'
+      'lg rest';
+    }
+    .aktuality-card{
+      grid-area: rest;
+    }
+    .aktuality-card--lg{
+      grid-area: lg;
+    }
+
+
+
+
+
+
+
+
   }
 
 
