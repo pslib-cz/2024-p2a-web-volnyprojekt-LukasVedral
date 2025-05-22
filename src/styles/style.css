@@ -34,6 +34,7 @@
 .img-responsive{
   display: block;
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   object-fit: fill;
@@ -239,7 +240,10 @@ bottom: 3em;
     bottom: 100px;
   }
 }
-
+.card{
+  position: relative;
+  display: block;
+}
 
 /*main*/
 main{
@@ -252,20 +256,25 @@ main{
 }
 
 /*index*/
+.aktuality, .card__container{
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap);
+}
 
 
+.card--aktuality{
 
-.aktuality-card{
-  height: auto;
-  position: relative;
   border: 2px solid var(--secondary);
   border-radius: 8px;
 }
 
-.aktuality-card p{
+.card--aktuality p{
   margin: 0%;
 }
-.aktuality-card__main{
+.card--aktuality main{
+  gap: 0;
+  margin: 0;
   padding: 1rem;
   padding-top: .5rem;
   display: flex;
@@ -282,27 +291,27 @@ main{
 .club__header li{
   list-style: disc outside none;
 }
-.plan-card{
+.card--club{
   border: var(--primary) 2px solid;
   text-align: center;
   max-width: 448px;
 }
-.plan-card main{
+.card--club main{
   margin: 1rem;
   padding: 0;
 }
-.plan-card ul{
+.card--club ul{
   padding: 0;
   margin: 0;
 }
-.plan-card li{
+.card--club li{
   padding: 0;
 }
 
-.plan-card header{
+.card--club header{
   background-color: var(--primary);
 }
-.season-plan{
+.club__season-plan{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -398,23 +407,23 @@ main{
   justify-content: center;
 }
 
-.trainers-card{
-
+.card--trainers{
+  max-width: 480px; 
 }
-.trainers-card li{
+.card--trainers li{
   list-style: disc outside none;
   padding: 0;
   
 }
-.trainers-card__heading{
+.card--trainers .card__heading{
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 }
-.trainers-card h3{
+.card--trainers h3{
   color: var(--primary);
 }
-.trainers-card__age{
+.card__age{
   background-color: var(--secondary-dark);
   padding: .25rem .5rem;
   border-radius: 50px;
@@ -422,11 +431,11 @@ main{
   display: inline-flex;
   place-items: center;
 }
-.trainers-card a{
+.card--trainers a{
   color: var(--primary);
   display: inline;
 }
-.trainers-card img{
+.card--trainers img{
   border-radius: 8px;
 }
 
@@ -437,7 +446,7 @@ main{
   flex-flow: row wrap;
   gap: var(--main-gap);
 }
-.actions-card{
+.card--actions{
   background: radial-gradient(var(--secondary), var(--secondary-dark));
   padding: 1rem .75rem;
   border-radius: 16px;
@@ -446,46 +455,51 @@ main{
   gap: 1rem;
   justify-content: center;
 }
-.actions-card p , .actions-card a{
+.card--actions p , .card--actions a{
   display: flex;
   align-items: center;
   gap: .5em;
 }
-.actions-card p::before, .actions-card a::before{
+.card--actions p::before, .card--actions a::before{
   content: "";
   display: inline-block;
   width: 24px;
   height: 24px;
 }
 
-.actions-card__place::before{
+.card__place::before{
   background-image: url('/images/calendar.svg');
 }
-.actions-card__date::before{
+.card__date::before{
   background-image: url('/images/point.svg');
 
 }
-.actions-card__info::before{
+.card__info::before{
   background-image: url('/images/calendar.svg');
 
 }
 
 /*contact*/
-.contact-part{
+.contact__info{
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap)
+}
+.contact__part{
   display: flex;
   flex-direction: column;
   gap: .75rem;
   border-left: var(--secondary) solid 4px;
   padding: 0 1.25em;
 }
-.contact-part:hover{
+.contact__part:hover{
   border-left-color: var(--primary);
 }
 
-.contact-part h2{
+.contact__part h2{
   font-weight: 700;
 }
-.contact-part > *{
+.contact__part > *{
   font-size: 1rem;
 }
 .contact__icons{
@@ -503,43 +517,60 @@ main{
 .contact__icons a:hover path{
   fill: var(--secondary);
 }
+.contact__photo{
+  display: none;
+}
 
 /*nabor*/
 .nabor{
   gap: 2.5rem;
 }
-.nabor-form{
+.nabor__form{
   display: flex;
   flex-direction: column;
   gap: 2.5em;
 }
-.nabor-form__row{
+.form__row{
+  flex: 1;
   height: 36px;
   border-radius: 8px;
   border: 1px solid var(--secondary);
   background: rgba(25, 25, 25, 0.10);
 }
-.textarea{
+.form__user-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__textarea{
   height: auto;
 }
-.nabor-form__row::placeholder{
+.form__row::placeholder{
   color: var(--primary);
   position: absolute;
-  top: 8px;
   left: 8px;
   opacity: 0.7;
 }
 
-.nabor-form__btn{
+.form__btn{
   flex: 0 0 auto;
   align-self: flex-end;
   border: none;
 }
 
 
+/*articles*/
+.article__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
 
-
-
+.article__img {
+  margin-top: var(--main-gap);
+}
 
 
 
@@ -680,26 +711,27 @@ main{
       align-items: flex-start;
       gap: 4rem;
     }
-    .aktuality-card__container{
+    .card__container{
       flex:1 ;
       display: flex;
       flex-direction: column;
       gap: 4rem;
     }
-    .aktuality-card--s{
+    .card--s{
       flex: 1;
       display: flex;
       grid-column: 2;
     }
 
-    .aktuality-card--s h2{
+    .card--s h2{
       font-size: 1.5rem;
     }
-    .aktuality-card--s img{
+    .card--s img{
       height: 128px ;
+      width: auto;
     }
 
-    .aktuality-card--s .aktuality-card__main{
+    .card--aktuality main{
       flex: 1;
       justify-content: space-between;
     }
@@ -708,7 +740,7 @@ main{
       margin: 0;
     }
 
-    .aktuality-card--lg{
+    .card--lg{
       flex: 1;
     }
 
@@ -719,14 +751,69 @@ main{
       gap: 128px;
     }
 
+    /*tranings*/
+    .trainings{
+      padding: 2rem 4rem;
+    }
+    .training__main{
+      display: flex;
+      gap: 4rem;
+    }
+    .training__main > *{
+      flex: 1;
+    }
+    .training__rozvrh{
+      width: auto;
+    }
 
+    /*contact*/
+    .contact__main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .contact__info{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    .contact__photo{
+      display: block;
+    }
+    .contact__part > h2{
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    .contact__part > p{
+      font-size: 1.25rem;
+    }
+    /*nabor*/
+    .form__row{
+      min-width: 460px;
+    }
+    .form__user-info{
+      display: flex;
+      flex-flow: row wrap;
+    }
 
-
-
-
-
-
-
+    /*articles*/
+    .article__title {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .article__img {
+      flex-shrink: 0;
+      width: 33%;
+    }
+    
+    .article__img img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-width: 100%;
+    }
 
   }
 
