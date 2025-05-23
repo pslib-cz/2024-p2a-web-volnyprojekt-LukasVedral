@@ -1,10 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-/*
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-*/
+
 import '/src/styles/swiper.css';
 import '../styles/style.css';
 
@@ -21,6 +17,6 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
+  
 });
 
-document.querySelector('.swiper').style.overflow = 'visible';
