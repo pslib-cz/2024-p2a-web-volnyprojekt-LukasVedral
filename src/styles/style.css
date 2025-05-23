@@ -96,8 +96,18 @@
 position: absolute;
 left: calc(50vw - 20px);
 bottom: 3em;
+animation: moveUpDown 1s infinite;
 }
 
+@keyframes moveUpDown {
+  0%,50%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+
+}
 
 
 /*footer*/
@@ -217,7 +227,7 @@ bottom: 3em;
   width: 24px;
   height: 24px;
   z-index: 1;
-  animation: pingpong 2s ease-in-out infinite;
+  animation: pingpong 1.5s ease-in-out infinite;
 }
 
 @keyframes pingpong {
@@ -491,9 +501,11 @@ main{
   gap: .75rem;
   border-left: var(--secondary) solid 4px;
   padding: 0 1.25em;
+  transition: border .1s;
 }
-.contact__part:hover{
-  border-left-color: var(--primary);
+a.contact__part:hover{
+  border-left:8px solid var(--primary);
+
 }
 
 .contact__part h2{
@@ -642,6 +654,12 @@ main{
       display: flex;
 
     }
+    .btn--nabor{
+      font-size: 1.25rem;
+      bottom: 2.5em;
+      right: 2.5em;
+      padding: 1rem;
+    }
     .nabor-container{
       width: auto;
       margin: 0;
@@ -660,6 +678,9 @@ main{
 
     .info{
       font-size: 1.5em;
+    }
+    .info a:hover{
+      text-decoration: underline;
     }
     .social-icons svg{
       width: 4em;
