@@ -23,6 +23,9 @@
 
 @layer design{
 
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     margin: 0 auto;
   }
@@ -478,15 +481,17 @@ main{
 }
 
 .card__place::before{
-  background-image: url('/images/calendar.svg');
+  background-image: url('/images/point.svg');
 }
 .card__date::before{
-  background-image: url('/images/point.svg');
+  background-image: url('/images/calendar.svg');
 
 }
 .card__info::before{
-  background-image: url('/images/calendar.svg');
-
+  background-image: url('/images/info.svg');
+}
+a.card__info:hover{
+  color: var(--primary);
 }
 
 /*contact*/
@@ -639,6 +644,9 @@ a.contact__part:hover{
     }
     .arrow{
       bottom: 4em;
+    }
+    .arrow:target{
+
     }
     .slogan{
       top: 160px;
