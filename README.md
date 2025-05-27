@@ -1,6 +1,6 @@
 [figma](https://www.figma.com/design/SP6iEs1XoBX1CIJT3tmq11/VedralLuk%C3%A1%C5%A1?node-id=0-1&m=dev&t=XbFoBjTTKFyfMH1Y-1)
 ---
-[web link](https://fuzzy-bassoon-2nk5q9r.pages.github.io/)
+[web link]([https://fuzzy-bassoon-2nk5q9r.pages.github.io/](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-LukasVedral/))
 
 # 🏓 PINK! Liberec
 
